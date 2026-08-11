@@ -1,0 +1,63 @@
+
+body {
+  background-color: #dddcdc;
+  color: #3e3e3e;
+  margin: 10px;
+  padding: 20px;
+}
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+div{
+    display:flex;
+    justify-content: center;
+}
+div img {
+    border-radius: 50%;
+}
+
+h1 {
+    background-color: #12284C;
+    color: #FFFFFF;
+  font-size: 2.5em;
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline solid #0f0f0f;
+}
+ 
+h2 {
+  color: #12284C;
+  border-bottom: 4px solid #FF0000;
+  padding-bottom: 4px;
+}
+#Experience{
+    display: block;
+}
+section {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+nav {
+  display: flex;
+  gap: 16px;
+  padding: 12px 20px;
+  background-color: #12284C;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav a { 
+    color: #FFFFFF; 
+    text-decoration: none; 
+    padding:10px;
+}
+#Connect ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
