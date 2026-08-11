@@ -5,10 +5,10 @@ body {
   margin: 10px;
   padding: 20px;
 }
-.playfair-display-<uniquifier> {
+.playfair-display-regular {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -21,12 +21,15 @@ div img {
 }
 
 h1 {
-    background-color: #12284C;
+    
     color: #FFFFFF;
-  font-size: 2.5em;
+  font-size: 100px;
+  font-family: "Playfair Display",serif;
   font-style: italic;
+  font-weight: 700;
+  font-variant: typeface desinger;
   text-align: center;
-  text-decoration: underline solid #0f0f0f;
+  text-shadow: #5aa528;
 }
  
 h2 {
@@ -34,8 +37,24 @@ h2 {
   border-bottom: 4px solid #FF0000;
   padding-bottom: 4px;
 }
-#Experience{
-    display: block;
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+}
+.box{
+    width:200px;
+    height:200px;
+    font-size: 10px;
+    text-align: center;
+}
+#box1{
+    background-color: #12284C;
+    color:#FFFFFF;
+}
+#box2{
+    background-color: #3e3e3e;
+    color:#FFFFFF;
 }
 section {
   padding: 20px;
