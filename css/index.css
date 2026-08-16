@@ -1,0 +1,82 @@
+
+body {
+  background-color: #dddcdc;
+  color: #3e3e3e;
+  margin: 10px;
+  padding: 20px;
+}
+.playfair-display-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+div{
+    display:flex;
+    justify-content: center;
+}
+div img {
+    border-radius: 50%;
+}
+
+h1 {
+    
+    color: #FFFFFF;
+  font-size: 100px;
+  font-family: "Playfair Display",serif;
+  font-style: italic;
+  font-weight: 700;
+  font-variant: typeface desinger;
+  text-align: center;
+  text-shadow: #5aa528;
+}
+ 
+h2 {
+  color: #12284C;
+  border-bottom: 4px solid #FF0000;
+  padding-bottom: 4px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+}
+.box{
+    width:200px;
+    height:200px;
+    font-size: 10px;
+    text-align: center;
+}
+#box1{
+    background-color: #12284C;
+    color:#FFFFFF;
+}
+#box2{
+    background-color: #3e3e3e;
+    color:#FFFFFF;
+}
+section {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+nav {
+  display: flex;
+  gap: 16px;
+  padding: 12px 20px;
+  background-color: #12284C;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav a { 
+    color: #FFFFFF; 
+    text-decoration: none; 
+    padding:10px;
+}
+#Connect ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}

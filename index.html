@@ -8,10 +8,23 @@
         <meta name="description" content="Juan Garcia's Portfolio">
         <meta name="keywords" content="HTML,CSS,JavaScript,Front End Development">
         <meta http-equiv="refresh" content="30">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
     </head>
-    <body>
+    <body class="playfair-display-regular">
+         <nav>
+        <a href="#About">About</a>
+        <a href="#Experience">Experience</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Connect">Connect</a>
+        </nav>
         <h1>Juan Garcia</h1>
-        <img src="assets/images/IMG_2686.HEIC" alt="Image of Juan Garica" width="200" height="200">
+        <div>
+            <img src="assets/images/IMG_2686.HEIC" alt="Image of Juan Garica" width="200" height="200">
+        </div>
     <section id="About">
         <h2>About</h2>
         <p>My name is Juan Garcia I am 25 years old as of August 2026. I currently do interior renovations for a living like fixing,installing,finishing and painting drywall.
@@ -21,17 +34,33 @@
     </section>
     <section id="Experience">
         <h2>Experience</h2>
-        <ul>
-            <li>Fundamental of Computer Science in Java 2018-2019</li>
-            <li>Code the Dream Intro 26.3 Summer 2026</li>
-        </ul>
+        <div class="container">
+            <div class="block" id="box1">
+                Fundamental of Computer Science in Java 2018-2019
+            </div>
+            <div class="block" id="box2">
+                Code the Dream Intro 26.3 Summer 2026
+            </div>
+        </div>
+    </section>
+    <section id="Skills">
+        <h2>Skills</h2>
+    </section>
+    <section id="Projects">
+        <h2>Projects</h2>
+        <ul></ul>
     </section>
     <section id="Connect">
         <h2>Connect</h2>
         <ul>
-            <li><a href="https://github.com/jgarc132">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/juan-garcia-9188773b9/">LinkedIn</a></li>
+            <a class="" href="https://github.com/jgarc132">
+                <img src="assets/icons/githhub/PNG/GitHub_Lockup_Black.png" alt="GitHub" width="80px" >
+            </a>
+            <a href="https://www.linkedin.com/in/juan-garcia-9188773b9/">
+                <img src="assets/icons/linkedin/linkedin-logo/LI-Logo.png" alt="Linkedin" width="80px">
+            </a>
         </ul>
     </section>
+   
     </body>
 </html>
