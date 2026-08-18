@@ -1,10 +1,3 @@
-// const { createElement } = require("react");
-
-// const today = new Date();
-// const thisYear = today.getFullYear;
-// const footer = document.querySelector("footer");
-// const copyright = body.createElement(p);
-console.log("Js is connected");
 let today = new Date();
 let thisYear = today.getFullYear();
  
