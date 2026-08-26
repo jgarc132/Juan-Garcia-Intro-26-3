@@ -101,3 +101,25 @@ nav a {
   list-style: none;
   padding: 0;
 }
+
+#removeButton{
+  background-color: #FF0000;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  border-color: black;
+  color: white;
+}
+.messageSection{
+  background-color: #c5c5c5;
+  padding: 20px;;
+}
+#messages ul{
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #c5c5c5;
+  color: #FFFFFF;
+}

@@ -7,7 +7,7 @@
         <meta name="author" content="Juan Garcia">
         <meta name="description" content="Juan Garcia's Portfolio">
         <meta name="keywords" content="HTML,CSS,JavaScript,Front End Development">
-        <meta http-equiv="refresh" content="30">
+        <!-- <meta http-equiv="refresh" content="30"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -20,6 +20,7 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#connect">Connect</a>
+        <a href="#message">Message</a>
         </nav>
         <h1>Juan Garcia</h1>
         <div>
@@ -64,6 +65,29 @@
                 <img src="assets/icons/linkedin/linkedin-logo/LI-Logo.png" alt="Linkedin" width="80px">
             </a>
         </ul>
+    </section>
+    <section id="message">
+        <h2>Leave a Message</h2>
+        <div class="messageSection">
+        <form name="leave_message">
+            <label>Username:
+                <input type="text" name="usersName" required="true"/><br />
+            </label>
+            <label>Email:
+                <input type="email" name="usersEmail" required="true"/><br />
+            </label>
+            <label>Message
+                <textarea name="usersMessage" required="true"></textarea><br />
+            </label>
+            <label>Submit
+                <button type="submit">Submit</button>
+            </label>
+        </form>
+        </div>
+    </section>
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
     </section>
     <footer></footer>
     <script src="js/index.js"></script>

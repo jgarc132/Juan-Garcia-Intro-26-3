@@ -15,5 +15,57 @@ for (let i = 0; i < skills.length; i++) {
     skill.textContent = skills[i];
     skill.classList.add(`skills-list`);
     skillsList.appendChild(skill);
-    
 }
+
+let messageForm = document.forms["leave_message"];
+messageForm.addEventListener("submit", function(event){
+    event.preventDefault();
+    let name = event.target.usersName.value;
+    let email = event.target.usersEmail.value;
+    let message = event.target.usersMessage.value;
+    console.log(name, email, message );
+
+
+    let messageSection = document.querySelector("#messages");
+    let messageList = messageSection.querySelector("ul");
+
+    let newMessage = document.createElement("li");
+    newMessage.innerHTML =
+    `<a href="mailto:${email}">${name}</a>
+    <span>${message}</span>`;
+
+    messageList.appendChild(newMessage);
+
+  
+
+    let removeButton = document.createElement("button");
+    removeButton.textContent = "Remove";
+    removeButton.type = "button";
+    removeButton.id = "removeButton"
+
+    removeButton.addEventListener("click", function () {
+    let entry = removeButton.parentNode;
+    entry.remove();
+    });
+
+    /*
+    let editButton = document.createElement("button");
+    editButton.textContent = "Edit";
+    editButton.type = "button";
+    editButton.addEventListner("click", function(){
+        
+
+    });
+    */
+
+
+
+    newMessage.appendChild(removeButton);
+    /*removeButton.appendChild(editButton);
+    */
+    messageForm.reset();
+});
+
+
+
+
