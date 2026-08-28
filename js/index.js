@@ -39,7 +39,7 @@ messageForm.addEventListener("submit", function(event){
   
 
     let removeButton = document.createElement("button");
-    removeButton.textContent = "Remove";
+    removeButton.textContent = "remove";
     removeButton.type = "button";
     removeButton.id = "removeButton"
 

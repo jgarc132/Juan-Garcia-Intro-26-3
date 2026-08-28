@@ -101,7 +101,13 @@ nav a {
   list-style: none;
   padding: 0;
 }
-
+input:focus{
+  background-color: azure;
+}
+label{
+  display: block;
+  margin-top: 1em;
+}
 #removeButton{
   background-color: #FF0000;
   border-radius: 15px;
@@ -109,10 +115,6 @@ nav a {
   cursor: pointer;
   border-color: black;
   color: white;
-}
-.messageSection{
-  background-color: #c5c5c5;
-  padding: 20px;;
 }
 #messages ul{
   display: flex;
@@ -122,4 +124,22 @@ nav a {
   justify-content: space-evenly;
   background-color: #c5c5c5;
   color: #FFFFFF;
+}
+
+section form{
+  display:flex;
+  gap: 10px;
+}
+section form label{
+  font-weight:600;
+  font-size: 15px;
+}
+section form input,
+section form textarea{
+  padding: 10px 12px;
+}
+.submitButton{
+  margin-top: 10px;
+  padding:5px;
+  cursor: pointer;
 }
