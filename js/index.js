@@ -58,9 +58,9 @@ messageForm.addEventListener("submit", function(event){
     });
     */
 
-
-    messageList.appendChild(newMessage);
     newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+   
     /*removeButton.appendChild(editButton);
     */
     messageForm.reset();

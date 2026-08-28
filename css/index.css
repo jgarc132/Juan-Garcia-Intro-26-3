@@ -101,6 +101,10 @@ nav a {
   list-style: none;
   padding: 0;
 }
+#message{
+  display: flex;
+  flex-direction: column;
+}
 input:focus{
   background-color: azure;
 }
@@ -119,17 +123,14 @@ label{
 #messages ul{
   display: flex;
   padding: 30px;
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-evenly;
   background-color: #c5c5c5;
   color: #FFFFFF;
 }
 
-section form{
-  display:flex;
-  gap: 10px;
-}
+
 section form label{
   font-weight:600;
   font-size: 15px;
