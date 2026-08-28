@@ -108,7 +108,7 @@ label{
   display: block;
   margin-top: 1em;
 }
-#removeButton{
+removeButton{
   background-color: #FF0000;
   border-radius: 15px;
   padding: 10px;

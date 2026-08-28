@@ -34,14 +34,14 @@ messageForm.addEventListener("submit", function(event){
     `<a href="mailto:${email}">${name}</a>
     <span>${message}</span>`;
 
-    messageList.appendChild(newMessage);
+    
 
   
 
     let removeButton = document.createElement("button");
     removeButton.textContent = "remove";
     removeButton.type = "button";
-    removeButton.id = "removeButton"
+    removeButton.className = "removeButton"
 
     removeButton.addEventListener("click", function () {
     let entry = removeButton.parentNode;
@@ -59,7 +59,7 @@ messageForm.addEventListener("submit", function(event){
     */
 
 
-
+    messageList.appendChild(newMessage);
     newMessage.appendChild(removeButton);
     /*removeButton.appendChild(editButton);
     */
