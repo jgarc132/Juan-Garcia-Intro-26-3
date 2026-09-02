@@ -68,9 +68,14 @@ messageForm.addEventListener("submit", function(event){
 
 const projectSection = document.getElementById("projects");
 const projectList = projectSection.querySelector("ul");
- 
+ /*
 fetch("https://api.github.com/users/jgarc132/repos")
-  .then(response => response.json())
+  .then(response => {
+    if(!response.ok){
+        throw new Error(response.status);
+    }
+    else return response.json();
+  })
   .then(function(repositories) {
     for (let i = 0; i < repositories.length; i++) {
       const project = document.createElement("li");
@@ -79,8 +84,8 @@ fetch("https://api.github.com/users/jgarc132/repos")
     }
   })
   .catch(error => console.error("Error:", error));
+*/
 
-/*
 async function addRepos(){
     try{
         const result = await fetch("https://api.github.com/users/jgarc132/repos");
@@ -94,6 +99,5 @@ async function addRepos(){
         console.log(error);
     }
 }
-    */
 
 addRepos();
