@@ -129,8 +129,6 @@ label{
   background-color: #c5c5c5;
   color: #FFFFFF;
 }
-
-
 section form label{
   font-weight:600;
   font-size: 15px;
@@ -143,4 +141,17 @@ section form textarea{
   margin-top: 10px;
   padding:5px;
   cursor: pointer;
+}
+
+#projects{
+  display: flex;
+  flex-direction: column;
+}
+#projects li{
+  background-color: #838485;
+  border-style: solid;
+  border-color: black;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
 }
