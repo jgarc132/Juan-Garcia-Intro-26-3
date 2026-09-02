@@ -101,3 +101,46 @@ nav a {
   list-style: none;
   padding: 0;
 }
+#message{
+  display: flex;
+  flex-direction: column;
+}
+input:focus{
+  background-color: azure;
+}
+label{
+  display: block;
+  margin-top: 1em;
+}
+.removeButton{
+  background-color: #FF0000;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  border-color: black;
+  color: white;
+}
+#messages ul{
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #c5c5c5;
+  color: #FFFFFF;
+}
+
+
+section form label{
+  font-weight:600;
+  font-size: 15px;
+}
+section form input,
+section form textarea{
+  padding: 10px 12px;
+}
+.submitButton{
+  margin-top: 10px;
+  padding:5px;
+  cursor: pointer;
+}
