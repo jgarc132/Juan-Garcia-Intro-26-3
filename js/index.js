@@ -76,13 +76,16 @@ fetch("https://api.github.com/users/jgarc132/repos")
     }
     else return response.json();
   })
-  .then(function(repositories) {
+  .then(function(repos) {
+    const repositories = repos;
     for (let i = 0; i < repositories.length; i++) {
       const project = document.createElement("li");
       project.textContent = repositories[i].name;
       projectList.appendChild(project);
     }
   })
-  .catch(error => console.error("Error:", error));
+  .catch(function(error){
+    console.error(error);
+    alert("Error:",error);
+  });
 
-addRepos();
