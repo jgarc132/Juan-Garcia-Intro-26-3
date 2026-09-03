@@ -66,6 +66,26 @@ messageForm.addEventListener("submit", function(event){
     messageForm.reset();
 });
 
+const projectSection = document.getElementById("projects");
+const projectList = projectSection.querySelector("ul");
 
-
+fetch("https://api.github.com/users/jgarc132/repos")
+  .then(response => {
+    if(!response.ok){
+        throw new Error(response.status);
+    }
+    else return response.json();
+  })
+  .then(function(repos) {
+    const repositories = repos;
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.textContent = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(function(error){
+    console.error(error);
+    return{ message: error.message};
+  });
 
