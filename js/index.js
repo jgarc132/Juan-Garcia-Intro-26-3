@@ -86,6 +86,6 @@ fetch("https://api.github.com/users/jgarc132/repos")
   })
   .catch(function(error){
     console.error(error);
-    alert("Error:",error);
+    return{ message: error.message};
   });
 

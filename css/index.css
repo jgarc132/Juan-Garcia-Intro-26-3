@@ -142,16 +142,18 @@ section form textarea{
   padding:5px;
   cursor: pointer;
 }
-
-#projects{
-  display: flex;
-  flex-direction: column;
-}
-#projects li{
-  background-color: #838485;
-  border-style: solid;
-  border-color: black;
-  border-radius: 15px;
-  padding: 10px;
-  color: white;
+@media screen{
+  #projects{
+    display: flex;
+    flex-direction: column;
+  }
+  #projects li{
+    
+    background-color: #838485;
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+  }
 }
