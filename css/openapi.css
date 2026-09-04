@@ -1,0 +1,39 @@
+
+nav{
+    display: flex;
+    gap:16px;
+    background-color: rgb(200,200,200);
+    padding: 16px 20px;
+    position:sticky;
+    top:0;
+    z-index: 100;
+}
+nav a{
+    color:white;
+    padding:10px;
+}
+body{
+    background-color: #272b30;
+}
+div{
+    display: block;
+}
+#planetButton,
+#starShipsButton{
+    padding: 14px 12px;
+    border-radius: 20px;
+    cursor:pointer;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#planetButton{
+    background-color: #FFE81F;
+    box-shadow: 0 0 20px rgb(255, 72, 0);
+    
+}
+#starShipsButton{
+     background-color: #FFE81F;
+     box-shadow: 0 0 20px #00f;
+}
