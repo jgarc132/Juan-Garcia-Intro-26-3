@@ -20,16 +20,13 @@ div img {
     border-radius: 50%;
 }
 
-h1 {
-    
-    color: #FFFFFF;
+h1 {  
+  color: #FFFFFF;
   font-size: 100px;
   font-family: "Playfair Display",serif;
   font-style: italic;
   font-weight: 700;
-  font-variant: typeface desinger;
   text-align: center;
-  text-shadow: #5aa528;
 }
  
 h2 {
@@ -142,7 +139,7 @@ section form textarea{
   padding:5px;
   cursor: pointer;
 }
-@media screen{
+@media screen and (max-width: 768px){
   #projects{
     display: flex;
     flex-direction: column;

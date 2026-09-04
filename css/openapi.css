@@ -2,21 +2,40 @@
 nav{
     display: flex;
     gap:16px;
-    background-color: rgb(200,200,200);
+    background-color: #000000;
     padding: 16px 20px;
     position:sticky;
     top:0;
     z-index: 100;
+    justify-content: center;
+    box-shadow: 0 4px 10px #FFE81F;
 }
 nav a{
     color:white;
     padding:10px;
+    font-weight: bold;
+
 }
 body{
     background-color: #272b30;
 }
-div{
-    display: block;
+#planets-starships-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: clamp(20px, 5vw, 200px);
+    min-height: 100vh;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+@media(max-width:700px){
+    #planets-starships-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding-top: 20px;
+    }
 }
 #planetButton,
 #starShipsButton{
@@ -30,10 +49,19 @@ div{
 }
 #planetButton{
     background-color: #FFE81F;
-    box-shadow: 0 0 20px rgb(255, 72, 0);
+    box-shadow: 0 0 20px #E81212;
     
 }
 #starShipsButton{
      background-color: #FFE81F;
      box-shadow: 0 0 20px #00f;
+}
+
+#planets ul li,
+#starShips ul li{
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: #1e2a33;
+    border: 2px solid #2b6795;
+    color:rgb(47, 121, 240);
 }
