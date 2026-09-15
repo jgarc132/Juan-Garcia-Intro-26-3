@@ -1,3 +1,4 @@
+//Footer Code to inset CopyRight with Name and Year
 let today = new Date();
 let thisYear = today.getFullYear();
  
@@ -6,6 +7,8 @@ let copyright = document.createElement("p");
 copyright.innerHTML = `&copy; Juan Garcia ${thisYear} `;
 footer.appendChild(copyright);
 
+
+//Adding Skills to list using a for loop 
 let skills = ["JavaScript","HTML","CSS","Github"];
 let skillsSection = document.querySelector("#skills");
 let skillsList = skillsSection.querySelector("ul");
@@ -17,6 +20,7 @@ for (let i = 0; i < skills.length; i++) {
     skillsList.appendChild(skill);
 }
 
+//Gives function to the leave a message section
 let messageForm = document.forms["leave_message"];
 messageForm.addEventListener("submit", function(event){
     event.preventDefault();
@@ -37,7 +41,7 @@ messageForm.addEventListener("submit", function(event){
     
 
   
-
+  //Adds a remove button to message to be able to remove from  message section
     let removeButton = document.createElement("button");
     removeButton.textContent = "remove";
     removeButton.type = "button";
@@ -48,13 +52,12 @@ messageForm.addEventListener("submit", function(event){
     entry.remove();
     });
 
+
     /*
     let editButton = document.createElement("button");
     editButton.textContent = "Edit";
     editButton.type = "button";
     editButton.addEventListner("click", function(){
-        
-
     });
     */
 
@@ -66,9 +69,12 @@ messageForm.addEventListener("submit", function(event){
     messageForm.reset();
 });
 
+
+
 const projectSection = document.getElementById("projects");
 const projectList = projectSection.querySelector("ul");
 
+// fectches repos from github catching any errors and displaying on page
 fetch("https://api.github.com/users/jgarc132/repos")
   .then(response => {
     if(!response.ok){
