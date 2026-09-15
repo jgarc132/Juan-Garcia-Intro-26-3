@@ -1,6 +1,6 @@
 
 body {
-  background-color: #dddcdc;
+  background-color: #0e0e0e4e;
   color: #3e3e3e;
   margin: 10px;
   padding: 20px;
@@ -82,7 +82,7 @@ nav {
   display: flex;
   gap: 16px;
   padding: 12px 20px;
-  background-color: #12284C;
+  background-color: #af0505;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -139,7 +139,7 @@ section form textarea{
   padding:5px;
   cursor: pointer;
 }
-@media screen and (max-width: 768px){
+@media screen and (min-width: 200px){
   #projects{
     display: flex;
     flex-direction: column;
